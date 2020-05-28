@@ -2,10 +2,12 @@
 
 static void copy_memory(void* dst, void* src, int size);
 
-int CyclicRotationSolution(int* A, int N, int K)
+
+struct Results CyclicRotationSolution(int* A, int N, int K)
 {
 	int rot = 0;
 	int temp = 0;
+	struct Results result;
 	if (K >= N)
 	{
 		temp = K / N;
@@ -15,6 +17,8 @@ int CyclicRotationSolution(int* A, int N, int K)
 	{
 		rot = K;
 	}
+
+
 	printf("\r\nBefore: ");
 	for (int i = 0; i < N; i++)
 	{
@@ -31,17 +35,20 @@ int CyclicRotationSolution(int* A, int N, int K)
 	copy_memory(table, cutright, rot*sizeof(int));
 	copy_memory(table+rot, cutleft, (N-rot)*sizeof(int));
 
+
+	result.A = table;
+	result.N = N;
 	printf("\r\nAfter: ");
 	for (int i = 0; i < N; i++)
 	{
-		printf("%d - ", table[i]);
+		printf("%d - ", result.A[i]);
 	}
 	
 	free(cutleft);
 	free(cutright);
-	free(table);
+	//free(table);
 
-	return 1;
+	return result;
 }
 
 static void copy_memory(void* dst, void* src, int size)

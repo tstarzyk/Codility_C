@@ -24,12 +24,18 @@
     <ClCompile Include="main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FrogRiverOne.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CyclicRotation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MissingElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FrogRiverOne.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

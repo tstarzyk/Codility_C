@@ -124,11 +124,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CyclicRotation.c" />
+    <ClCompile Include="FrogRiverOne.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="MissingElement.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CyclicRotation.h" />
+    <ClInclude Include="FrogRiverOne.h" />
     <ClInclude Include="MissingElement.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
