@@ -12,12 +12,12 @@ int main()
 {
 	struct Results result;
 	int result3 = 0;
-	int X = 5;
-	int N = 8;
+	int X = 3;
+	int N = 7;
 
 	int tab1[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 	int tab2[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 11 };
-	int tab3[] = { 1, 3, 1, 4, 2, 3, 5, 4 };
+	int tab3[] = { 1, 3, 1, 3, 2, 1, 3 };
 
 	for (int i = 0; i < 10; i++)
 	{

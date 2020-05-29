@@ -2,36 +2,43 @@
 
 int FrogRiverOneSolution(int X, int A[], int N)
 {
-	bool* statusIndex = (bool*)malloc(N * sizeof(bool));
-	int tmpCnt = 0;
-
-	if (N > 100000)
+	int* status;
+	if (N == 1) 
 	{
-		return -1;
-	}
-	if (X > 100000)
-	{
-		return -1;
-	}
-
-
-	for (int ii = 0; ii < N; ii++)
-	{
-		statusIndex[A[ii] - 1] = true;
-		if (A[ii] == X)
+		if (A[0] == X) 
 		{
-			break;
+			return 0;
 		}
-		tmpCnt++;
-	}
-	
-	for (int ii = 0; ii < X; ii++)
-	{
-		if (statusIndex[ii] != true)
+		else 
 		{
 			return -1;
 		}
 	}
+	for (int k = 0; k < N; k++)
+	{
+		printf("%d, ", A[k]);
+	}
+	printf("\r\n");
 
-	return tmpCnt;
+	status = (int*)calloc(X, sizeof(int));
+	int cnt = 0;
+	for (int i = 0; i < N; i++) 
+	{
+		printf("A[i] %d \r\n", A[i]);
+		if (status[A[i] - 1] == 0) 
+		{
+			printf("status[A[i]] %d \r\n", status[A[i]]);
+			printf("status[A[i] - 1] %d\r\n", status[A[i] - 1]);
+			cnt++;
+			status[A[i] - 1] = 1;
+		}
+		if (i >= X - 1) 
+		{
+			if (cnt == X) 
+			{
+				return i;
+			}
+		}
+	}
+	return -1;
 }
