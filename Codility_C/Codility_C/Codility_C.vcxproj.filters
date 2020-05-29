@@ -27,6 +27,9 @@
     <ClCompile Include="FrogRiverOne.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FrogJmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CyclicRotation.h">
@@ -36,6 +39,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="FrogRiverOne.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FrogJmp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

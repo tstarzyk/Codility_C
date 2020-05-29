@@ -124,12 +124,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CyclicRotation.c" />
+    <ClCompile Include="FrogJmp.c" />
     <ClCompile Include="FrogRiverOne.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="MissingElement.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CyclicRotation.h" />
+    <ClInclude Include="FrogJmp.h" />
     <ClInclude Include="FrogRiverOne.h" />
     <ClInclude Include="MissingElement.h" />
   </ItemGroup>

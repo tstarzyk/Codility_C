@@ -6,14 +6,19 @@
 #include "FrogRiverOne.h"
 #include "CyclicRotation.h"
 #include "MissingElement.h"
-
+#include "FrogJmp.h"
 
 int main()
 {
 	struct Results result;
 	int result3 = 0;
+	int result4 = 0;
 	int X = 3;
 	int N = 7;
+
+	int X1 = 10;
+	int Y1 = 85;
+	int D1 = 30;
 
 	int tab1[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 	int tab2[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 11 };
@@ -36,6 +41,10 @@ int main()
 	printf("\r\n");
 	result3 = FrogRiverOneSolution(X, tab3, N);
 	printf("leaves: %d \r\n", result3);
+
+	printf("\r\n");
+	result4 = FrogJmp(X1, Y1, D1);
+	printf("jumps %d \r\n", result4);
 
 	system("pause");
 }
