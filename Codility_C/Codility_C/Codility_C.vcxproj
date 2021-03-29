@@ -123,6 +123,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BinaryGap.c" />
     <ClCompile Include="CyclicRotation.c" />
     <ClCompile Include="FrogJmp.c" />
     <ClCompile Include="FrogRiverOne.c" />
@@ -130,6 +131,7 @@
     <ClCompile Include="MissingElement.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BinaryGap.h" />
     <ClInclude Include="CyclicRotation.h" />
     <ClInclude Include="FrogJmp.h" />
     <ClInclude Include="FrogRiverOne.h" />

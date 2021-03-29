@@ -7,12 +7,14 @@
 #include "CyclicRotation.h"
 #include "MissingElement.h"
 #include "FrogJmp.h"
+#include "BinaryGap.h"
 
 int main()
 {
 	struct Results result;
 	int result3 = 0;
 	int result4 = 0;
+	int result5 = 0;
 	int X = 3;
 	int N = 7;
 
@@ -45,6 +47,10 @@ int main()
 	printf("\r\n");
 	result4 = FrogJmp(X1, Y1, D1);
 	printf("jumps %d \r\n", result4);
+
+	printf("\r\n");
+	result5 = BinaryGap(8);
+	printf("binaryGap %d \r\n", result5);
 
 	system("pause");
 }
