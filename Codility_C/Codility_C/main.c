@@ -8,6 +8,7 @@
 #include "MissingElement.h"
 #include "FrogJmp.h"
 #include "BinaryGap.h"
+#include "OddNumber.h"
 
 int main()
 {
@@ -15,6 +16,7 @@ int main()
 	int result3 = 0;
 	int result4 = 0;
 	int result5 = 0;
+	int result6 = 0;
 	int X = 3;
 	int N = 7;
 
@@ -51,6 +53,11 @@ int main()
 	printf("\r\n");
 	result5 = BinaryGap(8);
 	printf("binaryGap %d \r\n", result5);
+
+	printf("\r\n");
+	int A[4] = { 12, 12, 10, 10 };
+	result6 = OddNumber(&A[0], 4);
+	printf("oddNumber %d \r\n", result6);
 
 	system("pause");
 }
